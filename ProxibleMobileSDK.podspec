@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 # Source Info
   s.platform     =  :ios, '8.0'
     s.source       = { :git => 'https://github.com/Proxible/Proxible-iOs-MobileSDK.git', :tag => s.version.to_s }
-  s.source_files = 'ProxibleMobileSDK.framework/Versions/A/Headers/*.h'
+  s.source_files = 'ProxibleMobileSDK.framework/Headers/*.h'
   s.ios.vendored_frameworks = 'ProxibleMobileSDK.framework'
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
   s.preserve_paths = 'ProxibleMobileSDK.framework'
