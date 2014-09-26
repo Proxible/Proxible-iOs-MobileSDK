@@ -9,12 +9,15 @@
 #import <Foundation/Foundation.h>
 
 //Default to staging
-typedef NS_ENUM(NSInteger, PRXEnviroment){
+typedef NS_ENUM(NSInteger, PRXCloudEnviroment){
     Development,
     Staging,
     Producton
 };
 
+/**
+ The PRXMobileSDK class is the main interface to set global SDK settings.
+ */
 @interface PRXMobileSDK : NSObject
 
 /**
@@ -22,13 +25,13 @@ typedef NS_ENUM(NSInteger, PRXEnviroment){
  *
  *  @return Enviroment enum
  */
-+(PRXEnviroment)environment;
++(PRXCloudEnviroment)environment;
 
 /**
  *  Set the enum to the desired cloud enviroment
  *
  *  @param enviroment The envrioment to set the SDK to point to
  */
-+(void)setEnvironment:(PRXEnviroment)environment;
++(void)setEnvironment:(PRXCloudEnviroment)environment;
 
 @end
