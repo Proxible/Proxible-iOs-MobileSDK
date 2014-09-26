@@ -1,0 +1,6 @@
+framework module ProxibleMobileSDK {
+  umbrella header "ProxibleMobileSDK.h"
+
+  export *
+  module * { export * }
+}
