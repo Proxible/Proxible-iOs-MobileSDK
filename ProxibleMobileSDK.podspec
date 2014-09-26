@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'ProxibleMobileSDK.framework'
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
   s.preserve_paths = 'ProxibleMobileSDK.framework'
+  s.resources ='ProxibleMobileSDK.bundle'
 
   s.requires_arc = true
   
